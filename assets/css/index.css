@@ -1,0 +1,16 @@
+.mainBody {
+  margin-top: 8%;
+}
+footer {
+  background-color: grey;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+}
+.well {
+  height: 400px!important;
+}
+img {
+  float: left;
+  margin-right: 5%;
+}

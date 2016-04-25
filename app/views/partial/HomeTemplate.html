@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>AJS Directives</title>
+    <script src="../scripts/angular_1.4.2.js"></script>
+</head>
+
+<body ng-app="ProductApp">
+
+    <div directive-Carousal>
+
+    </div>
+
+    <div directive-About-Us>
+
+    </div>
+
+    <div directive-Product-Table>
+
+    </div>
+
+    <script>
+
+    var productAppModule = angular.module('ProductApp',[]);
+
+    productAppModule.directive('directiveCarousal',
+    function(){
+      var obj = {
+        restrict : 'A',
+        template : '<div>Carousal To display here!</div>'
+      }
+      return obj;
+    }
+  );
+
+  productAppModule.directive('directiveAboutUs',
+  function(){
+      var obj = {
+        restrict : 'A',
+        template : '<div>About Us To display here!</div>'
+      }
+      return obj;
+  });
+
+  productAppModule.directive('directiveProductTable',
+    function(){
+      var obj = {
+        restrict : 'A',
+        template : '<div>product Table To display here!</div>'
+      }
+    });
+
+    </script>
+
+</body>
+
+</html>

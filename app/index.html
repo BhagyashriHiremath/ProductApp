@@ -7,17 +7,56 @@
     <title>Product App</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.1.0/octicons.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-    <!--[if lt IE 9]>
-      <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link rel="stylesheet" href="../assets/css/index.css">
+
+    <!--[if lt IE 9]> <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script> <![endif]-->
   </head>
-  <body>
+  <body ng-app="Home">
 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active">
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#Product">product</a>
+            </li>
+            <li>
+              <a href="#ContactUs">ContactUs</a>
+            </li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container-fluid mainBody" ng-view=""></div>
+    <footer>
+      <h3>Copyright by 3dplm Software</h3>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script src="../scripts/angular_1.4.2.js"></script>
+    <script src="../scripts/angular-route_1.4.2.js"></script>
+    <script src="../scripts/ui-bootstrap.min.js"></script>
+    <script src="../scripts/ui-bootstrap-tpls.min.js"></script>
+    <script src="../assets/js/Home.js"></script>  
+
+    <script src="../app/controllers/ProductController.js"></script>
   </body>
 </html>
