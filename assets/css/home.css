@@ -1,0 +1,21 @@
+#home{
+  border : 2px solid black;
+  margin : 20px;
+}
+
+
+.product-data{
+  width : 80%;
+}
+
+tr, td{
+  padding : 10px;
+}
+
+.header{
+  font-weight: bold;
+}
+
+.product-data-row{
+  border-bottom:1px solid ;
+}

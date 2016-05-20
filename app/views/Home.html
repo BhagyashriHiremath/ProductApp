@@ -1,4 +1,21 @@
-<div class="productTable">
+<div id="home" align="center">
+<div directive-Carousal>
+</div>
+
+<div directive-About-Us>
+</div>
+
+<div ng-controller="ProductController">
+<table class="product-data">
+  <tbody>
+    <th><td class="header">ID</td><td class="header">Name</td><td class="header">Status</td><td class="header">Comment</td></th>
+    <tr ng-repeat="product in products" class="product-data-row"><td>{{product.ID}}</td><td>{{product.Name}}</td><td>{{product.Status}}</td><td>{{product.Comments}}</td></tr>
+</tbody>
+</table>
+</div>
+<div>
+
+<!-- <div class="productTable">
   <div class="row">
     <div class="col-md-3">
       <input type="number" name="ID" value="" placeholder="ID"/>
@@ -27,4 +44,4 @@
       Description
     </div>
   </div>
-</div>
+</div> -->
